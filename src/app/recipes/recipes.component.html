@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-recipes-list (recipeWasSelected) = "recipeSelected = $event"></app-recipes-list>
+  </div>
+    <div class="col-md-7">
+      <app-recipes-detail [recipe]="recipeSelected" 
+                          *ngIf="recipeSelected; else infoText">
+      </app-recipes-detail>
+
+      <ng-template #infoText> <h4 class="page-header">
+        OPCIONES PRINCIPALES PARA EL REGISTRO DE TUS PRODUCTOS<small><br>seleccione la opción que desea editar o agregar dependiendo de la categoría <code>!seleccione correctamente¡</code><code></code></small>
+      </h4>
+      <img src="https://vonuspos.com.mx/wp-content/uploads/inventarios.jpg" alt="Italian Trulli" style="width:500px;height:300px;">
+      </ng-template>
+    </div>
+  </div> 

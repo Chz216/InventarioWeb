@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark"> 
+  <a href="#" class="navbar-brand">InventarioWeb</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar" style="background-color: steelblue ">
+  <ul class="navbar-nav"> 
+    <li class="nav-item"> 
+      <a href="#" class="nav-link" (click)="onSelect('recipe')">Lista de productos</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link" (click)="onSelect('shopping-list')">Administrador</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+        Agregar
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a href="" class="dropdown-item">Usuarios</a>
+        <a href="" class="dropdown-item">Administrador</a>
+      </div>
+    </li>
+  </ul>
+  </div>
+</nav>
