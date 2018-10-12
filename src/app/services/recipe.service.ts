@@ -1,10 +1,10 @@
-import { Recipe } from '../recipes/Recipes.model';
+import { Recipes } from '../recipes/recipes.model';
 
 export class RecipeService {
-    private recipe: Recipe[] = [
-            new Recipe('Ver inventario', 'Verifica tus productos', ''),
-            new Recipe('Base de Datos', 'Descarga tu Base de Datos', ''),
-            new Recipe('Configuracion', 'Opciones', '')
+    private recipe: Recipes[] = [
+            new Recipes('Ver inventario', 'Verifica tus productos', ''),
+            new Recipes('Base de Datos', 'Descarga tu Base de Datos', ''),
+            new Recipes('Configuracion', 'Opciones', '')
 
       ]
 
