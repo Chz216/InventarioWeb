@@ -12,7 +12,6 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 
 import { FormularioAgregarComponent } from './formulario-agregar/formulario-agregar.component';
 
-import { AfiliadosComponent } from './afiliados/afiliados.component';
 
 @NgModule({
   declarations: [
